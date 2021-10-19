@@ -28,6 +28,10 @@ class App extends React.Component {
     };
   }
 
+  componentDidMount = () => {
+    document.title = "Make a Quantum Paper";
+  }
+
   searchArticle = () => {
     const {selectedWords} = this.state;
     const searchText = selectedWords.join(" ");
